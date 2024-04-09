@@ -3,17 +3,6 @@ import customtkinter
 from PIL import Image
 import os
 
-'''
-città = str(input("Inserire nome città:\n"))
-linkMeteo = f"https://api.openweathermap.org/data/2.5/weather?q={città}&appid=ab6d1f611ca3cbdd08906449d48ea636&units=metric"
-risposta = requests.get(linkMeteo).json()
-temperatura = risposta['main']['temp']
-umidità = risposta['main']['humidity']
-print(linkMeteo)
-
-print(f"La temperatura a {città} è di {temperatura}°C e l'umidità è del {umidità}%")
-'''
-
 def prendiMeteo():
     global img
     città = cittaBox.get("0.0", "end").lower()
